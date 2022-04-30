@@ -1,9 +1,88 @@
 //!|> Header --> Banner
 header
    min-height: calc(100vh - 94px)
-   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(200, 0, 0, 0.3)), url()
+   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(200, 0, 0, 0.3)), url(../../assets/bn.jpeg)
    background-position: center
    background-size: cover
    background-attachment: fixed
    background-repeat: no-repeat
    position: relative
+
+.row_header__bn
+   min-height: calc(100vh - 94px)
+
+.header__banner h1
+   border-top: 4px solid $yellow
+   border-bottom: 4px solid $white
+   animation: toTheRight
+   animation-duration: 4s
+   animation-fill-mode: forwards
+
+@keyframes toTheRight
+   0%
+      transform: translateX(-100px)
+      opacity: 0
+   50%
+      transform: translateX(30px)
+   100%
+      transform: translateX(0)
+      opacity: 1
+
+.header__banner h1 small
+   color: $white
+   font-family: $font_main
+
+.header__banner h1 strong
+   color: $yellow_darken
+   font-family: $font_main
+
+.btn__ask
+   color: $white
+   background: $brown_darken
+   border-radius: 15px
+   font-size: 2rem
+   border: 2px solid $yellow_darken
+   transition: all 0.5s ease-in-out
+   animation: toTheLeft
+   animation-duration: 4s
+   animation-fill-mode: forwards
+
+.btn__ask:hover
+   color: $red_darken
+   border: 2px solid $red_light
+   background: $yellow_darken
+
+@keyframes toTheLeft
+   0%
+      transform: translateX(100px)
+      opacity: 0
+   50%
+      transform: translateX(-30px)
+   100%
+      transform: translateX(0)
+      opacity: 1
+
+.btn__forward
+   display: inline-block
+   position: absolute
+   bottom: 5%
+   left: 50%
+   color: $brown_darken
+   background: $orange_lighting
+   border-radius: 10px
+   transition: all 0.5s ease
+   animation: toTheDown
+   animation-duration: 5s
+   animation-iteration-count: infinite
+
+.btn__forward:hover
+   color: $brown_darken
+   background: $yellow
+
+@keyframes toTheDown
+   0%
+     transform: translateY(-10px)
+   50%
+      transform: translateY(10px)
+   100%
+      transform: translateY(-10px)
