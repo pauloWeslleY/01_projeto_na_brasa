@@ -1,3 +1,7 @@
+body {
+  background: linear-gradient(to right, rgba(59, 13, 13, 0.6), rgba(59, 13, 13, 0.8)), url(./../../assets/bg.jpeg) center/cover fixed no-repeat;
+}
+
 .info {
   background: #391005;
 }
@@ -247,10 +251,6 @@ header {
   transform: rotate(-45deg) translate(6px, -3px);
 }
 
-body {
-  background: linear-gradient(to right, rgba(59, 13, 13, 0.6), rgba(59, 13, 13, 0.8)), url(./../../assets/bg.jpeg) center/cover fixed no-repeat;
-}
-
 .container h1 {
   font-family: "Lobster", cursive;
   color: #f4f1cb;
@@ -293,6 +293,21 @@ body {
 .item-container:hover .item-img {
   transform: scale(1.2);
   opacity: 0.5;
+}
+
+.about_content h1 {
+  color: #f1c70a;
+}
+.about_content h2 {
+  font-family: Arial;
+  color: #f4f1cb;
+  font-size: 1.3rem;
+  text-align: justify;
+}
+
+.photo__steakhouse {
+  transform: rotate(3deg);
+  padding-top: 50px;
 }
 
 html {
