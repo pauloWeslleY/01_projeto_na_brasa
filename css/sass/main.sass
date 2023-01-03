@@ -22,3 +22,24 @@ $font_text: Arial
 @import '_menu__nav_bar'
 @import '_body'
 @import '_menu_card'
+
+html
+   overflow-X: hidden
+
+*
+   ::-webkit-scrollbar
+      width: 8px
+
+   ::-webkit-scrollbar-track
+      width: 6px
+      background: $white
+
+   ::-webkit-scrollbar-thumb
+      background: $brown_lighting
+      border-radius: 24px
+
+      &:hover
+         background: #718096
+
+
+

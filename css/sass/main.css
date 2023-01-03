@@ -1,22 +1,24 @@
 .info {
   background: #391005;
 }
-.info a {
+.info .info__icons a {
   color: #ffae58;
   transition: color 0.3s ease-in-out;
   text-decoration: none;
 }
-.info a:hover {
+.info .info__icons a:hover {
   color: #c94118;
 }
-
-#logo__navigation {
+.info #logo__navigation {
   font-family: "Lobster", cursive;
   word-spacing: 0.6rem;
-  color: #ffae58;
 }
-#logo__navigation a {
+.info #logo__navigation a {
+  color: #ffae58;
   text-decoration: none;
+}
+.info #logo__navigation a:hover {
+  color: #c94118;
 }
 
 header {
@@ -249,13 +251,13 @@ body {
   background: linear-gradient(to right, rgba(59, 13, 13, 0.6), rgba(59, 13, 13, 0.8)), url(./../../assets/bg.jpeg) center/cover fixed no-repeat;
 }
 
-.parent_container {
-  font-family: "Lobster", cursive;
-}
-
 .container h1 {
   font-family: "Lobster", cursive;
   color: #f4f1cb;
+}
+
+.parent_container {
+  font-family: "Lobster", cursive;
 }
 
 .item-container {
@@ -269,10 +271,6 @@ body {
 }
 .item-container .item-img {
   transition: all 2s ease;
-}
-.item-container:hover .item-img {
-  transform: scale(1.2);
-  opacity: 0.5;
 }
 .item-container .item-link {
   position: absolute;
@@ -290,4 +288,28 @@ body {
 }
 .item-container:hover .item-link {
   opacity: 1;
+}
+
+.item-container:hover .item-img {
+  transform: scale(1.2);
+  opacity: 0.5;
+}
+
+html {
+  overflow-X: hidden;
+}
+
+* ::-webkit-scrollbar {
+  width: 8px;
+}
+* ::-webkit-scrollbar-track {
+  width: 6px;
+  background: #f4f1cb;
+}
+* ::-webkit-scrollbar-thumb {
+  background: #ae986F;
+  border-radius: 24px;
+}
+* ::-webkit-scrollbar-thumb:hover {
+  background: #718096;
 }/*# sourceMappingURL=main.css.map */

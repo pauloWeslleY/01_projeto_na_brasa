@@ -7,10 +7,10 @@
    "license": "MIT",
    "devDependencies": {
       "@fortawesome/fontawesome-free": "^6.1.1",
-      "jquery": "^3.6.0"
+      "jquery": "^3.6.1"
    },
    "dependencies": {
-      "magnific-popup": "^1.1.0"
+      "magnific-popup": "^1.1.0",
+      "slick-carousel": "^1.8.1"
    }
 }
-
