@@ -407,6 +407,30 @@ header {
   bottom: 0;
 }
 
+#testimonials h1 {
+  color: #f4f1cb;
+  font-family: "Lobster", cursive;
+}
+#testimonials .slick-track {
+  width: 100% !important;
+}
+#testimonials .testimonial__item {
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);
+          clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);
+}
+#testimonials .testimonial__item img {
+  width: 150px;
+}
+#testimonials .testimonial__item .testimonial__name {
+  color: #f4f1cb;
+  font-family: "Lobster", cursive;
+}
+#testimonials .testimonial__item .testimonial__description {
+  font-family: Arial;
+  text-align: justify;
+}
+
 html {
   overflow-X: hidden;
 }

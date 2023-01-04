@@ -65,3 +65,17 @@ $(function () {
       cssEase: "linear",
    });
 });
+
+$(function () {
+   //!Slick Carousel Photo SteakHouse
+   $(".carousel").slick({
+      dots: true,
+      autoplay: true,
+      autoplaySpeed: 700,
+      infinite: true,
+      speed: 500,
+      arrows: false,
+      fade: true,
+      cssEase: "linear",
+   });
+});
