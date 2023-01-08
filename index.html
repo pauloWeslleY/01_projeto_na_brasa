@@ -90,7 +90,7 @@
                         <strong>Rodízio</strong>
                      </h1>
                      <a
-                        href="#"
+                        href="#orderModal"
                         class="btn my-2 btn__ask text-capitalize trigger_btn"
                         data-toggle="modal"
                      >
@@ -100,7 +100,7 @@
                </div>
             </div>
          </div>
-         <a class="btn btn__forward">
+         <a href="#menu_card" class="btn btn__forward">
             <i
                class="fa-solid fa-circle-down"
                alt="Ir para próxima sessão do site"
@@ -133,30 +133,38 @@
          <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="navbar-nav mx-auto">
                <li class="nav-item">
-                  <a href="#" class="nav-link text-capitalize">Home</a>
+                  <a href="#icons_top" class="nav-link text-capitalize">Home</a>
                </li>
                <li class="nav-item">
-                  <a href="#" class="nav-link text-capitalize">Cardápio</a>
+                  <a href="#menu_card" class="nav-link text-capitalize"
+                     >Cardápio</a
+                  >
                </li>
                <li class="nav-item">
-                  <a href="#" class="nav-link text-capitalize">Sobre</a>
+                  <a href="#about" class="nav-link text-capitalize">Sobre</a>
                </li>
                <li class="nav-item">
-                  <a href="#" class="nav-link text-capitalize">Recomendações</a>
+                  <a href="#testimonials" class="nav-link text-capitalize"
+                     >Recomendações</a
+                  >
                </li>
                <li class="nav-item">
-                  <a href="#" class="nav-link text-capitalize">Equipe</a>
+                  <a href="#team" class="nav-link text-capitalize">Equipe</a>
                </li>
                <li class="nav-item">
-                  <a href="#" class="nav-link text-capitalize">Cozinha</a>
+                  <a href="#kitchen" class="nav-link text-capitalize"
+                     >Cozinha</a
+                  >
                </li>
                <li class="nav-item">
-                  <a href="#" class="nav-link text-capitalize">Contato</a>
+                  <a href="#contact" class="nav-link text-capitalize"
+                     >Contato</a
+                  >
                </li>
             </ul>
             <form action="#" class="form-inline d-none d-lg-block mr-5">
                <a
-                  href="#"
+                  href="#orderModal"
                   class="btn nav-btn text-capitalize trigger-btn"
                   data-toggle="modal"
                >
@@ -166,6 +174,7 @@
          </div>
       </nav>
       <!-- fixme |> Menu__NavBar ==> #End -->
+
       <!--* |> #Area Menu Card-->
       <section class="py-5" id="menu_card">
          <!--? Dishes and Portions -->
@@ -257,6 +266,7 @@
          <!--? Dishes and Portions => End -->
       </section>
       <!--* |> #Area Menu Card => End-->
+
       <!--* |> #Area Menu Card-->
       <section class="py-5" id="menu_card">
          <!--? Drinks -->
@@ -604,7 +614,7 @@
       <section id="testimonials" class="py-5">
          <h1 class="text-center">
             <i class="fas fa-thumbs-up"></i> <br />
-            Depoimentos
+            Recomendações
          </h1>
 
          <div id="slider" class="carousel slide" data-ride="carousel">
@@ -614,7 +624,7 @@
                   <div class="container">
                      <div class="row">
                         <div
-                           class="col-12 mx-auto d-flex testimonial__item py-3"
+                           class="col-12 mx-auto d-flex flex-column flex-lg-row testimonial__item py-3"
                         >
                            <div class="align-self-center ml-5">
                               <img
@@ -624,7 +634,7 @@
                               />
                            </div>
                            <div
-                              class="align-self-center testimonial__name px-5"
+                              class="align-self-center testimonial__name px-2"
                            >
                               <h2 class="text-capitalize mb-3">Mary</h2>
                               <p class="testimonial__description">
@@ -646,7 +656,7 @@
                   <div class="container">
                      <div class="row">
                         <div
-                           class="col-12 mx-auto d-flex testimonial__item py-3"
+                           class="col-12 mx-auto d-flex flex-column flex-lg-row testimonial__item py-3"
                         >
                            <div class="align-self-center ml-5">
                               <img
@@ -694,9 +704,213 @@
             </a> -->
          </div>
       </section>
+      <!--fixme #Testimonials ===  END -->
+
+      <!-- [] Contact -->
+      <section id="contact">
+         <div class="container-fluid no-padding">
+            <div class="row">
+               <div class="col-md-6 my-3">
+                  <div class="embed-responsive by9 map__box">
+                     <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11271.582018241019!2d-46.76885960501541!3d-23.663139559661683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce53b5b3a12aa9%3A0xff40d03fdffd625c!2sCap%C3%A3o%20Redondo%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1672791877518!5m2!1spt-BR!2sbr"
+                        width="600"
+                        height="450"
+                        style="border: 0"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                     >
+                     </iframe>
+                  </div>
+               </div>
+               <div class="col-md-6 my-3 align-self-center">
+                  <div class="form__card text-center">
+                     <div class="card__heading text-uppercase">
+                        <h1 class="text-uppercase">Entre em Contato</h1>
+                     </div>
+
+                     <div class="body__card">
+                        <!--[] FormGroup  -->
+                        <form>
+                           <!--? Input Name-->
+                           <div class="input-group my-3">
+                              <div class="input-group prepend">
+                                 <span class="input-group-text" id="input-text">
+                                    <i class="fas fa-user"></i>
+                                 </span>
+                                 <input
+                                    id="text"
+                                    type="text"
+                                    class="form-control form-control-lg"
+                                    placeholder="Informe o seu nome aqui..."
+                                 />
+                              </div>
+                           </div>
+                           <!--? Input Phone-->
+                           <div class="input-group my-3">
+                              <div class="input-group prepend">
+                                 <span
+                                    class="input-group-text"
+                                    id="input-phone"
+                                 >
+                                    <i class="fas fa-phone"></i>
+                                 </span>
+                                 <input
+                                    id="phone"
+                                    type="text"
+                                    class="form-control form-control-lg"
+                                    placeholder="Informe o seu telefone aqui..."
+                                 />
+                              </div>
+                           </div>
+                           <!--? Input Email-->
+                           <div class="input-group my-3">
+                              <div class="input-group prepend">
+                                 <span
+                                    class="input-group-text"
+                                    id="input-email"
+                                 >
+                                    <i class="fas fa-envelope"></i>
+                                 </span>
+                                 <input
+                                    id="email"
+                                    type="text"
+                                    class="form-control form-control-lg"
+                                    placeholder="Informe o seu e-mail aqui..."
+                                 />
+                              </div>
+                           </div>
+                           <!--? Input Email-->
+
+                           <div class="input-group my-3">
+                              <div class="input-group prepend">
+                                 <textarea
+                                    id="message"
+                                    rows="5"
+                                    class="form-control form-control-lg"
+                                    placeholder="Escreva sua mensagem aqui..."
+                                 ></textarea>
+                              </div>
+                           </div>
+
+                           <button
+                              type="submit"
+                              class="btn btn-lg text-uppercase contact__btn"
+                           >
+                              <i class="far fa-hand-point-right mr-2"></i>
+                              Enviar
+                           </button>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- [] Contact -->
+
+      <!--! Footer Bar -->
+      <footer>
+         <div class="container-fluid p-2 info" id="icons_top">
+            <div class="row">
+               <div
+                  class="col d-flex justify-content-center justify-content-md-between justify-content-sm-between align-items-baseline flex-wrap"
+               >
+                  <div class="p-2 info__icons">
+                     <a class="mr-2" alt="facebook">
+                        <i class="fa-brands fa-facebook fa-2x"></i>
+                     </a>
+                     <a class="mr-2" alt="instagram">
+                        <i class="fa-brands fa-instagram fa-2x"></i>
+                     </a>
+                     <a class="mr-2" alt="twitter">
+                        <i class="fa-brands fa-twitter fa-2x"></i>
+                     </a>
+                     <a class="mr-2" alt="whatsapp">
+                        <i class="fa-brands fa-whatsapp fa-2x"></i>
+                     </a>
+                  </div>
+               </div>
+               <h2 id="footer__copyright" class="p-2 text-capitalize">
+                  <a href="#" title="Voltar ao Inicio">&copy;Copyright 2018</a>
+               </h2>
+            </div>
+         </div>
+
+         <!-- [] ButtonBackToTop -->
+         <a
+            href="#icons_top"
+            id="back_to_top"
+            class="p-1"
+            title="Voltar ao Topo da pagina"
+         >
+            <i class="fas fa-arrow-circle-up fa-3x"></i>
+         </a>
+      </footer>
+
+      <!--[] MODAL -->
+      <div id="orderModal" class="modal fade">
+         <div class="modal-dialog modal__order">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <div class="avatar">
+                     <img
+                        src="./assets/pedir.png"
+                        alt="Ícone da Tela pedido online"
+                     />
+                  </div>
+                  <h4 class="modal-title">Pedido Online</h4>
+                  <button
+                     type="button"
+                     class="close"
+                     data-dismiss="modal"
+                     aria-hidden="true"
+                  >
+                     &times;
+                  </button>
+               </div>
+
+               <div class="modal-body">
+                  <form>
+                     <div class="form-group">
+                        <input
+                           class="form-control"
+                           type="text"
+                           name="name"
+                           placeholder="Digite o seu nome..."
+                           required
+                        />
+                     </div>
+                     <div class="form-group">
+                        <textarea
+                           rows="3"
+                           class="form-control"
+                           name="order"
+                           placeholder="O que você gostaria de pedir?"
+                           required
+                        ></textarea>
+                     </div>
+                     <div class="form-group">
+                        <button
+                           type="submit"
+                           class="btn btn-lg btn-block login__btn"
+                        >
+                           Pedir
+                        </button>
+                     </div>
+                  </form>
+               </div>
+
+               <div class="modal-footer"></div>
+            </div>
+         </div>
+      </div>
+
+      <!--[] MODAL === end -->
 
       <!--? jQuery -->
-      <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+      <script src="node_modules/jquery/dist/jquery.min.js"></script>
       <!--? jQuey Ripples-->
       <script src="scripts/jquery.ripples-min.js"></script>
       <!--? Bootstrap JS -->

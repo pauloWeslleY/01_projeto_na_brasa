@@ -282,6 +282,8 @@ header {
   border-top: 2px solid #f1c70a;
   transition: all 2s ease;
   opacity: 0;
+}
+.item-container .item-link:hover {
   color: #f4f1cb;
   border: 2px solid #f1c70a;
   background: #391005;
@@ -429,6 +431,190 @@ header {
 #testimonials .testimonial__item .testimonial__description {
   font-family: Arial;
   text-align: justify;
+}
+
+#contact .map__box {
+  min-height: 60vh;
+  border-radius: 5px;
+}
+#contact .form__card {
+  background: rgba(0, 0, 0, 0.4);
+  transition: all 2s ease;
+  border-radius: 20px;
+  padding: 20px;
+}
+#contact .form__card:hover {
+  background: rgba(84, 33, 37, 0.4);
+}
+#contact .form__card input {
+  color: #391005;
+  border: none;
+}
+#contact .form__card input::-moz-placeholder {
+  color: brown_lighting;
+  font-style: italic;
+}
+#contact .form__card input:-ms-input-placeholder {
+  color: brown_lighting;
+  font-style: italic;
+}
+#contact .form__card input::placeholder {
+  color: brown_lighting;
+  font-style: italic;
+}
+#contact .form__card textarea::-moz-placeholder {
+  color: brown_lighting;
+  font-style: italic;
+  text-align: center;
+}
+#contact .form__card textarea:-ms-input-placeholder {
+  color: brown_lighting;
+  font-style: italic;
+  text-align: center;
+}
+#contact .form__card textarea::placeholder {
+  color: brown_lighting;
+  font-style: italic;
+  text-align: center;
+}
+#contact .card__heading {
+  color: #f4f1cb;
+  font-family: "Lobster", cursive;
+}
+#contact .input-group-text {
+  background: #391005;
+  border-color: #391005;
+  color: #f1c70a;
+}
+#contact .contact__btn {
+  color: #f1c70a;
+  background: #391005;
+  border-color: #f1c70a;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+}
+#contact .contact__btn:hover {
+  background: #f1c70a;
+  border-color: #391005;
+  color: #391005;
+}
+
+footer #footer__copyright a {
+  font-family: "Lobster", cursive;
+  font-size: 1.3rem;
+  color: #f4f1cb;
+  transition: all 4s ease;
+}
+footer #footer__copyright a:hover {
+  text-decoration: none;
+  color: #f1c70a;
+}
+footer #back_to_top {
+  color: #9F492F;
+  display: inline-block;
+  transition: 0.5s ease;
+}
+footer #back_to_top:hover {
+  color: #f1c70a;
+  text-decoration: none;
+}
+footer .scrollTop {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.modal__order {
+  width: 350px;
+  margin-top: 150px;
+}
+.modal__order .form-control {
+  color: #391005;
+  border: 0.2rem solid #7E1819;
+  border-radius: 10px;
+}
+.modal__order .form-control::-moz-placeholder {
+  color: #c94118;
+  font-style: italic;
+}
+.modal__order .form-control:-ms-input-placeholder {
+  color: #c94118;
+  font-style: italic;
+}
+.modal__order .form-control::placeholder {
+  color: #c94118;
+  font-style: italic;
+}
+.modal__order .form-control:focus {
+  border-color: #ae986F;
+  color: #391005;
+  font-weight: bold;
+  box-shadow: none;
+}
+.modal__order .form-control .modal-login .btn {
+  min-height: 40px;
+  border-radius: 3px;
+}
+.modal__order .modal-content {
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+}
+.modal__order .modal-header {
+  border-bottom: none;
+  position: relative;
+}
+.modal__order .modal-header h4 {
+  font-family: "Lobster", cursive;
+  font-size: 26px;
+}
+.modal__order .modal-footer {
+  background: #391005;
+  text-align: center;
+  justify-content: center;
+  margin: 0 -20px -20px;
+  font-size: 13px;
+}
+.modal__order .close {
+  top: -5px;
+  right: -5px;
+}
+.modal__order .avatar {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: -70px;
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  z-index: 9;
+  background: #391005;
+  padding: 15px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.modal__order .avatar img {
+  width: 100%;
+}
+.modal__order .btn {
+  color: #f4f1cb;
+  background: #391005;
+  border-color: #391005;
+  font-family: "Lobster", cursive;
+  font-weight: bold;
+  text-decoration: none;
+  line-height: normal;
+  transition: all 0.4;
+}
+.modal__order .btn:hover, .modal__order .btn:focus {
+  background: #f1c70a;
+  border-color: #f1c70a;
+  color: #391005;
+  font-weight: bold;
+}
+.modal__order .trigger-btn {
+  display: inline-block;
+  margin: 100px auto;
 }
 
 html {
